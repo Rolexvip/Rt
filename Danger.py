@@ -18,11 +18,11 @@ import psutil
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7917908158:AAGqSZq17yAGpjLeyZl_lkhKIPBo2d8yzmQ'
-MONGO_URI = 'mongodb+srv://admin:kpR4ObsewTySq48I@test.zeqrmgb.mongodb.net/test_db?retryWrites=true&w=majority&appName=piro&tlsAllowInvalidCertificates=true'
-FORWARD_CHANNEL_ID = -1002160984463
-CHANNEL_ID = -1002160984463
-error_channel_id = -1002160984463
+TOKEN = '7186923047:AAEiPzQ9_IluDgiwDyDXidUzMq5CTl77hTM'
+MONGO_URI = 'mongodb+srv://Soul:JYAuvlizhw7wqLOb@soul.tsga4.mongodb.net'
+FORWARD_CHANNEL_ID = -1002027880444
+CHANNEL_ID = -1002027880444
+error_channel_id = -1002027880444
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -88,9 +88,9 @@ async def start_asyncio_loop():
 def create_inline_keyboard():
     markup = types.InlineKeyboardMarkup()
     button3 = types.InlineKeyboardButton(
-        text="❤‍🩹 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ❤‍🩹", url="https://t.me/+9RIkdU6mGWU1NDc1")
+        text="❤‍🩹 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ❤‍🩹", url="https://t.me/CRACKWAR0")
     button1 = types.InlineKeyboardButton(text="👤 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 👤",
-        url="https://t.me/@IPXKING_OWNER")
+        url="https://t.me/@TM_CRACKWAR_ASKRIDER")
     markup.add(button3)
     markup.add(button1)
     return markup
@@ -321,7 +321,7 @@ def handle_attack_command(message):
         if not user_data or user_data['plan'] == 0:
             bot.send_message(chat_id, "*🚫 Access Denied!*\n"
                                        "*You need to be approved to use this bot.*\n"
-                                       "*Contact the owner for assistance: @IPXKING_OWNER.*", 
+                                       "*Contact the owner for assistance: @TM_CRACKWAR_ASKRIDER.*", 
                                        reply_markup=create_inline_keyboard(), parse_mode='Markdown')
             return
 
@@ -372,8 +372,8 @@ def process_attack_command(message):
                                                "*Please select a different port to proceed.*", 
                                                reply_markup=create_inline_keyboard(), parse_mode='Markdown')
             return
-        if duration >= 340:
-            bot.send_message(message.chat.id, "*⏳ Maximum duration is 340 seconds.*\n"
+        if duration >= 240:
+            bot.send_message(message.chat.id, "*⏳ Maximum duration is 240 seconds.*\n"
                                                "*Please shorten the duration and try again!*", 
                                                reply_markup=create_inline_keyboard(), parse_mode='Markdown')
             return  
@@ -440,9 +440,9 @@ def myinfo_command(message):
             )
             markup = types.InlineKeyboardMarkup()
             button1 = types.InlineKeyboardButton(text="☣️ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 ☣️",
-                                                 url="https://t.me/@IPXKING_OWNER")
+                                                 url="https://t.me/@TM_CRACKWAR_ASKRIDER")
             button2 = types.InlineKeyboardButton(
-                text="💸 𝗣𝗿𝗶𝗰𝗲 𝗟𝗶𝘀𝘁 💸", url="@IPXKING_OWNER")
+                text="💸 𝗣𝗿𝗶𝗰𝗲 𝗟𝗶𝘀𝘁 💸", url="https://t.me/CRACKWAR0/2457")
             markup.add(button1)
             markup.add(button2)
         else:
@@ -461,7 +461,7 @@ def myinfo_command(message):
             )
             markup = types.InlineKeyboardMarkup()
             button = types.InlineKeyboardButton(
-                text="❤‍🩹 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ❤‍🩹", url="https://t.me/+9RIkdU6mGWU1NDc1")
+                text="❤‍🩹 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ❤‍🩹", url="https://t.me/CRACKWAR0")
             markup.add(button)
 
         bot.send_message(message.chat.id,
@@ -517,7 +517,7 @@ def owner_command(message):
     response = (
         "*👤 **Owner Information:**\n\n"
         "For any inquiries, support, or collaboration opportunities, don't hesitate to reach out to the owner:\n\n"
-        "📩 **Telegram:** @IPXKING_OWNER\n\n"
+        "📩 **Telegram:** @TM_CRACKWAR_ASKRIDER\n\n"
         "💬 **We value your feedback!** Your thoughts and suggestions are crucial for improving our service and enhancing your experience.\n\n"
         "🌟 **Thank you for being a part of our community!** Your support means the world to us, and we’re always here to help!*\n"
     )
@@ -547,7 +547,7 @@ def canary_command(message):
     markup = types.InlineKeyboardMarkup()
     button1 = types.InlineKeyboardButton(
         text="📱 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗙𝗼𝗿 𝗔𝗻𝗱𝗿𝗼𝗶𝗱 📱",
-        url="https://t.me/freeddospremiumbot/5257")
+        url="https://t.me/ABOUT_DESTROYER/7")
     button2 = types.InlineKeyboardButton(
         text="🍎 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗳𝗼𝗿 𝗶𝗢𝗦 🍎",
         url="https://apps.apple.com/in/app/surge-5/id1442620678")
